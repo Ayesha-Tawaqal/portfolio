@@ -357,16 +357,16 @@ content: '';
     transform:scale(1.08);
 }
 .workinfo a i{
-    color:var(--bluecolor);
-    background-color:var(--muted);
-    border-radius: 50%;
-    padding: 15px;
- 
- text-align: center;
- margin-top: 20px;
-/* text-align: center; */
- 
-    font-size: 30px;
+    color:var(--bluecolor);                 /* arrow color */
+    background-color: var(--muted);
+    width: 60px;                  /* fixed width */
+    height: 60px;                 /* fixed height */
+    border-radius: 50%;            /* perfect circle */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 28px;
     font-weight: 500;
 }
 .work-heading{
@@ -887,4 +887,8 @@ html, body {
   .inputtext textarea {
     max-width: 100%;
   }
+}
+.card{
+    background-color: #283154 !important;
+    min-height: 320px;   /* or height: 320px */
 }
