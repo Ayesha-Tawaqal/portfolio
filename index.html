@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+<body >
+
+    <div class="container-fluid px-0" style="background-color: #14192c;">
+        <nav class="  navbar  navbar-expand-lg px-5  justify-content-between  align-items-center">
+         <!-- logo -->
+             <a href="#" class="navbar-brand  custom-text nav-link">
+            <span class="custom-dark p-0">A</span>YESHA<span class="fs-1 fw-2 px-0">.</span>
+          </a>
+          <!-- hamburger -->
+          <button class="navbar-toggler   d-md-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#mobilemenu">
+             <span class="navbar-toggler-icon "></span>
+          </button>
+    
+ 
+           <!-- menu -->
+      
+           
+           <ul class="right navbar-nav ms-auto d-none d-md-flex flex-md-row gap-5 " >
+<li class=" nav-item"><a href="#Home"  class="nav-link text2"><Span>Home</Span></a></li>
+<li class=" nav-item"><a href="#about" class="nav-link text2"><span>About</span></a></li>
+<li class="nav-item"><a href="#Services"  class="nav-link text2"><span>Services</span></span></a></li>
+<li class=" nav-item"><a href="#Work" class="nav-link text2"><span>My Work</span></a></li>
+<li class=" nav-item"><a href="#Contact" class="nav-link text2"><span>Contact</span></a></li>
+
+           </ul>
+
+            
+
+  <!-- off canvas -->
+
+  <div class="offcanvas offcanvas-end text-white  d-md-none w-75 customoffcanvas" id="mobilemenu" >
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title ">Menu</h4>
+        <button type="button" class="btn-close  btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+                   <ul class=" navbar-nav  " >
+<li class=" nav-item"><a href="#"  class="nav-link  text2" ><Span>Home</Span></a></li>
+<li class=" nav-item"><a href="#" class="nav-link   text2" ><span>About</span></a></li>
+<li class="nav-item"><a href="#"  class="nav-link   text2"><span>Services</span></a></li>
+<li class=" nav-item"><a href="#" class="nav-link   text2" ><span>Portfolio</span></a></li>
+<li class=" nav-item"><a href="#" class="nav-link    text2"><span>Contact</span></a></li>
+
+           </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+        </nav>
+       
+<!-- navbar ends -->
+
+
+
+<!--  Body-->
+<section class="hero" id="Home">
+
+<div class="container d-flex ">
+    <div class="col-md-6 text-white ">
+        <p class="customp">Web Developer</p>
+        <h1 class=" mb-0 customheading">Hi, I'm  <span class="name">Ayesha</span></h1>
+        <br>
+        <h1 class="mt-0 customheading mt-0">Tawaqal From Pakistan</h1>
+        <button class="hbt"><b><a href="#about" style="text-decoration: none;">About me</a></b></button>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center align-items-center ">
+          <div><img class="img-fluid portimg" src="images/WhatsApp Image prifile.jpeg" alt="">
+        <br>
+     <div class="map text-center">
+     <p><a href="https://maps.google.com/?q=Faisalabad,Pakistan" target="_blank">
+    <i class="bi bi-geo-alt"></i> Faisalabad, Pakistan
+</a></p>
+     </div>
+        
+        </div>
+      
+   
+</div>
+   
+</div>
+
+</section>
+
+<!-- About me -->
+
+
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="row gy-5 align-items-start">
+
+      <!-- LEFT COLUMN -->
+      <div class="col-lg-5 reveal">
+        <p class="section-label">Get to know me</p>
+        <h2 class="about-tagline">
+          I build things<br>
+          for the <span class="highlight">web.</span>
+        </h2>
+        <div class="row g-3 reveal reveal-delay-1">
+          <div class="col-4">
+            <div class="stat-card">
+              <span class="stat-number" data-target="10">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="stat-card">
+              <span class="stat-number" data-target="1">0</span>
+              <span class="stat-label">Yr Exp.</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="stat-card">
+              <span class="stat-number" data-target="3">0</span>
+              <span class="stat-label">Skills</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col-lg-7 reveal reveal-delay-2">
+        <p class="about-bio">
+          Hey! I'm <strong style="color:#B8A898;">Ayesha Tawaqal</strong> — a frontend developer from
+          Faisalabad, Pakistan. I love turning ideas into clean, responsive web experiences
+          using HTML, CSS, JavaScript, and Bootstrap. I care about every pixel and every interaction.
+        </p>
+
+        <div class="about-tabs">
+          <button class="tab-btn active" data-tab="skills">
+            <i class="bi bi-lightning-charge me-1"></i> Skills
+          </button>
+          <button class="tab-btn" data-tab="education">
+            <i class="bi bi-mortarboard me-1"></i> Education
+          </button>
+          <button class="tab-btn" data-tab="experience">
+            <i class="bi bi-briefcase me-1"></i> Experience
+          </button>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="tab-panel active" id="tab-skills">
+          <div class="skill-row">
+            <div class="skill-top">
+              <span class="skill-name"><i class="bi bi-filetype-html"></i> HTML & CSS</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top">
+              <span class="skill-name"><i class="bi bi-bootstrap"></i> Bootstrap</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top">
+              <span class="skill-name"><i class="bi bi-filetype-js"></i> JavaScript</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top">
+              <span class="skill-name"><i class="bi bi-vector-pen"></i> React</span>
+              <span class="skill-pct">25%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top">
+              <span class="skill-name"><i class="bi bi-phone"></i> Responsive Design</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+          </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="tab-panel" id="tab-education">
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <p class="tl-year">2026 – Present</p>
+              <h4 class="tl-title">Frontend Web Development</h4>
+              <p class="tl-sub">Self-taught · Online courses & projects<br>HTML, CSS, Bootstrap, JavaScript</p>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <p class="tl-year">2026</p>
+              <h4 class="tl-title">Software Engineering</h4>
+              <p class="tl-sub">From GCUF</p>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <p class="tl-year">2022</p>
+              <h4 class="tl-title">Matriculation</h4>
+              <p class="tl-sub">Faisalabad Board · Science Group</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="tab-panel" id="tab-experience">
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <p class="tl-year">2026 – Present</p>
+              <h4 class="tl-title">Freelance Frontend Developer</h4>
+              <p class="tl-sub">Building responsive landing pages & portfolio sites for clients.</p>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <p class="tl-year">2025</p>
+              <h4 class="tl-title">Personal Projects</h4>
+              <p class="tl-sub">Crypto dashboard, portfolio website, interactive UI components.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+<!-- card section -->
+ <section  class="servicesection" id="Services">
+    <div class="container service">
+        <h1 class="service-heading">My Services</h1>
+        <div class="row g-4">
+            <!-- card 1 -->
+            <div class="col-md-4">
+                <div class="card  text-white border-0 rounded-4 h-60 p-4">
+
+                    <i class="bi bi-code-slash fs-1 mb-4"></i>
+                <h3>Frontend Web Development</h3>
+                <p>I build responsive, modern, websites using HTML, CSS, JavaScript, and Bootstrap, ensuring they work smoothly.</p>
+         
+         <a href="#" data-bs-toggle="modal" data-bs-target="#webmodal">
+  Learn more
+</a>
+
+
+
+
+
+                </div>
+            </div>
+
+            <!-- card 2 -->
+
+               <div class="col-md-4">
+            <div class="card  text-white p-4 h-60 border-0 rounded-4 customcard">
+                <i class="bi bi-crop fs-1 mb-4"></i>
+                <h3>Responsive web design Design</h3>
+                <p>I create mobile-first layouts that adapt perfectly to all screens</p>
+             
+         <a href="#" data-bs-toggle="modal" data-bs-target="#uiuxModal">
+  Learn more
+</a>
+
+            </div>
+        </div>
+        <!-- card 3 -->
+           <div class="col-md-4">
+            <div class="card  text-white p-4 h-60 border-0 rounded-4 customcard">
+               <i class="bi bi-window-stack fs-1 mb-4"></i>
+                <h3>UI Implementation</h3>
+                <p>I transform Figma or design mockups into clean, pixel-perfect, interactive web interfaces with attention to detail.</p>
+             
+         <a href="#" data-bs-toggle="modal" data-bs-target="#exmodel">
+  Learn more
+</a>
+
+            </div>
+        </div>
+
+                
+            </div>
+        </div>
+
+
+        <!-- popup 1 -->
+
+<div class="modal fade" id="webmodal">
+  <div class="modal-dialog">
+    <div class="modal-content custom-modal  p-3">
+
+      <h3>Frontend Web Development</h3>
+      <p>I develop responsive websites using HTML, CSS, JavaScript, and Bootstrap. My focus is on writing clean, maintainable code and creating fast, accessible websites.</p>
+
+<button class="btn btn-outline-light" data-bs-dismiss="modal">
+    Close
+</button>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- popup 2 -->
+     <div class="modal fade" id="uiuxModal">
+  <div class="modal-dialog">
+    <div class="modal-content custom-modal  p-3">
+
+      <h3>Responsive Web Design</h3>
+      <p>Every website I build is optimized for different screen sizes, ensuring a consistent and user-friendly experience on mobile, tablet, and desktop devices</p>
+
+<button class="btn btn-outline-light" data-bs-dismiss="modal">
+    Close
+</button>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- popup 3 -->
+
+
+<div class="modal fade" id="exmodel">
+  <div class="modal-dialog">
+    <div class="modal-content custom-modal  p-3">
+
+      <h3>UI Implementation</h3>
+      <p>I convert modern UI designs into fully functional webpages while maintaining design accuracy, smooth animations, and intuitive user interactions.</p>
+
+<button class="btn btn-outline-light" data-bs-dismiss="modal">
+    Close
+</button>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+ </section>
+
+
+<!-- WORK CARD SECTION -->
+
+
+
+<section class="work-section" id="Work">
+   
+    <div class="container">
+         <h1 class="work-heading">My Work</h1>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="work-card" style="background-image: url('images/Screenshot\ 2026-06-30\ 231817.png');">
+                    
+                    <div class="workinfo">
+                        <h3>Clone Netflix</h3>
+                        <p class="mb-4">This is an attractive site which is fully responsive</p>
+                              <a href="https://www.linkedin.com/posts/ayesha-tawaqal-358848320_just-completed-my-netflix-clone-project-using-activity-7371443730681221120-_zD6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFFIW_QBN52QLH-EACrqUKq3A1mML1-31sM" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="work-card" style="background-image: url(images/Screenshot\ 2026-05-12\ 223944.png);">
+                  
+                    <div class="workinfo">
+                        <h3>crypto</h3>
+                        <p>This is a website which shows live prices of different coins</p>
+                              <a href="https://www.linkedin.com/posts/ayesha-tawaqal-358848320_webdevelopment-javascript-activity-7400618067531264000-MFbf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFFIW_QBN52QLH-EACrqUKq3A1mML1-31sM"><i class="bi bi-box-arrow-up-right"targe="_blank"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="work-card" style="background-image: url('images/Screenshot\ 2026-06-30\ 231423.png');">
+      
+                    <div class="workinfo">
+                        <h3>Search Engine</h3>
+                        <p>It works like search engine provide images of different things</p>
+                              <a href="https://www.linkedin.com/posts/ayesha-tawaqal-358848320_webdevelopment-javascript-frontenddevelopment-activity-7402430821317722112-LW8V?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFFIW_QBN52QLH-EACrqUKq3A1mML1-31sM"><i class="bi bi-box-arrow-up-right" target="_blank"></i></a>
+                    </div>
+
+                </div>
+            </div>
+ <!-- <a href="#more-projects">See more projects</a> -->
+ </div>
+
+<div class="container mt-4 d-none" id="extraProjects">
+  <div class="row">
+     <div class="col-md-4">
+                <div class="work-card" style="background-image: url('images/Screenshot\ 2026-05-18\ 114629.png');">
+                 
+                    <div class="workinfo">
+                        <h3>
+                       Learner
+                        </h3>
+                        <p class="mb-4">This is the app which I recreated using HTML CSS and JS. It's a clone</p>
+                              <a href="https://www.linkedin.com/posts/ayesha-tawaqal-358848320_recreated-a-responsive-layout-from-scratch-activity-7451703576617422848-Rf8D?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFFIW_QBN52QLH-EACrqUKq3A1mML1-31sM" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+     <div class="col-md-4">
+                <div class="work-card" style="background-image: url('images/Screenshot\ 2026-05-19\ 005224.png');">
+                    
+                    <div class="workinfo">
+                        <h3>SHAQ</h3>
+                        <p class="mb-4">This is the site for resturant which shows their menu and prices</p>
+                              <a href="https://www.linkedin.com/posts/ayesha-tawaqal-358848320_this-project-focuses-on-creating-a-fully-activity-7363473699959668758-BXZa?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFFIW_QBN52QLH-EACrqUKq3A1mML1-31sM"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+     <div class="col-md-4">
+                <div class="work-card" style="background-image: url('images/Screenshot\ 2026-05-12\ 224647.png');">
+                 
+                    <div class="workinfo">
+                        <h3>Launching Site</h3>
+                        <p class="mb-4">This is a Launching page for our new site to register people</p>
+                              <a href="https://www.linkedin.com/posts/ayesha-tawaqal-358848320_webdevelopment-frontend-javascript-activity-7390460400317718529-MwCU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFFIW_QBN52QLH-EACrqUKq3A1mML1-31sM" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+  </div>
+</div>
+
+       
+          <div class="text-center mt-4">
+       <button type="button" id="toggleBtn" class="btn">
+    See more projects
+  </button>
+</div>
+   
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="contact" id="Contact">
+  <div class="container d-flex d-row">
+ <div class="col-lg-6 contactform">
+   <div class="row">
+    
+      <div class="contact-heading">
+        <h1>Contact Me</h1>
+            </div>
+    <div class="mail  mt-3 mb-3 ">
+          <a href="mailto:ayesharajpoot1117@gmail.com" class="mail-link"><i class="bi bi-send-fill"></i>ayesharajpoot1117@gmail.com</a>
+    </div>
+      
+   <div class="phone mt-3 g-3">
+         <a href="tel:+923095489588" ><i class="bi bi-telephone-fill"></i>+92 300 1234567</a>
+   </div>
+   <div class="social-links mt-3 mb-3">
+
+  <a href="https://www.linkedin.com/public-profile/settings/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BWlTaN8bjSuW0dxi2%2BnMXNw%3D%3D" target="_blank" class="social-icon">
+    <i class="bi bi-linkedin"></i>
+  </a>
+
+  <a href="https://github.com/Ayesha-Tawaqal" target="_blank" class="social-icon">
+    <i class="bi bi-github"></i>
+  </a>
+
+  <a href="https://instagram.com/a_yesha1117" target="_blank" class="social-icon">
+    <i class="bi bi-instagram"></i>
+  </a>
+
+  <a href="https://wa.me/923095489588" target="_blank" class="social-icon">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+   </div>
+<a href="cv/AyeshaTawaqal_CV.pdf"
+   download="AyeshaTawaqal_CV.pdf"
+   class="cvbtn">
+   Download CV
+</a>
+  
+    </div>
+   </div>
+  
+    <div class="col-lg-6 rightform">
+       <div class="row">
+<form action="https://api.web3forms.com/submit" method="POST" class="form">
+
+    <input type="hidden" name="access_key" value="10e8e63a-2491-4e7d-98ee-406af3e3fcba">
+
+    <input type="hidden" name="subject" value="New Portfolio Message">
+
+    <div class="inputname">
+        <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            required>
+    </div>
+
+    <div class="inputemail">
+        <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required>
+    </div>
+
+    <div class="inputtext">
+        <textarea
+            name="message"
+            placeholder="Message"
+            required></textarea>
+    </div>
+
+    <button type="submit" class="submit">
+        Submit
+    </button>
+
+</form>
+    </div>
+   </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<script>
+ 
+    let btn = document.getElementById("toggleBtn");
+let extra = document.getElementById("extraProjects");
+
+btn.onclick = function () {
+  extra.classList.toggle("d-none");
+
+  if(extra.classList.contains("d-none")){
+    btn.innerText = "See more projects";
+  } else {
+    btn.innerText = "Show less";
+  }
+}
+/* Tab switching */
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabPanels = document.querySelectorAll('.tab-panel');
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    tabBtns.forEach(b => b.classList.remove('active'));
+    tabPanels.forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    if (btn.dataset.tab === 'skills') animateBars();
+  });
+});
+
+/* Progress bars */
+function animateBars() {
+  document.querySelectorAll('.bar-fill').forEach(bar => {
+    bar.style.width = '0';
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      bar.style.width = bar.dataset.width + '%';
+    }));
+  });
+}
+
+// animate counter
+
+
+
+function animateCounters() {
+  document.querySelectorAll('[data-target]').forEach(el => {
+    const target = +el.dataset.target;
+    let current = 0;
+    const step = Math.ceil(target / 30);
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) { current = target; clearInterval(timer); }
+      el.textContent = current + '+';
+    }, 40);
+  });
+}
+
+/* Scroll reveal */
+let triggered = false;
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      if (!triggered) { triggered = true; animateBars(); animateCounters(); }
+    }
+  });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script>
+AOS.init({
+  duration: 1200,
+  once: true
+});
+</script> -->
+</body>
+</html>
